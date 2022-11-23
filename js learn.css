@@ -1,0 +1,107 @@
+.container{
+	width: 800px;
+	height: 230px;
+	
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr ;
+	line-height: 53px;
+	text-align: center;
+}
+
+.ud{
+	width: 200px;
+	height: 150px;
+	position: fixed;
+	top: 20%;
+	right: 20%;
+	background: #88eef7;
+	color: black;
+	text-align: center;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+	
+}
+
+.link{
+	text-decoration: none;
+
+}
+.cs{
+	
+	text-align: left;
+	color: black;
+	font-weight: bold ;
+
+}
+
+.cs1{
+	
+	text-align: right;
+	color: ;
+	font-weight: bold;
+
+		
+}
+
+
+.box{
+	border: 1px solid black;
+	padding: 10px;
+	list-style-type: none;
+	font-size: 18px;
+
+}
+
+
+#mydiv{
+	line-height: 22px;
+	background-image: url(wa.jpg);
+	text-transform: capitalize;
+	text-align: right;
+}
+
+button{
+	width: 60%;
+	color: white;
+	background: green;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	padding: 10px;
+	box-shadow: 2px 2px 4px gray;
+}
+
+button:hover{
+	box-shadow: 0px 0px 1px gray;
+	width: 59%;
+}
+
+h2{
+	color: #34aeeb;	
+	font-size: 1.8rem;
+}
+
+input{
+	width: 90%;
+	background: #f0f7fa;
+	color: darkgray;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 18px;
+	box-shadow: inset 2px 2px 4px gray, 2px 2px 4px white;
+}
+
+
+
+
+
+
+
+.{
+	
+}
