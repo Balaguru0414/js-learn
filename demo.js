@@ -466,6 +466,82 @@ else if(value2!='')
 }	
 }
 
+/////////////////////////////////////////////////////////////     comfirm ---- alert
+
+
+<h2>Alert,Confirm,prompt</h2>
+    <p id='p1'> </p>
+    <button onclick="check()">Click Me</button>
+
+////        ---- css
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+p{
+    font-size: 2rem;
+    
+}
+
+button{
+    padding: 10px;
+    color: white;
+    background: blue;
+}
+
+///// ----- js
+
+function check() {
+    if(confirm('You Want to see my number')){
+        document.getElementById('p1').innerHTML='9360172760'
+}
+else{
+        document.getElementById('p1').innerHTML='Sorry! you say Cancel'
+}
+}
+             ----    prompt  using  -----
+
+function check() {
+alert('You Want to see my number')
+passward=prompt('Enter your Passward','')
+if(passward=='bala')
+{
+
+    document.getElementById('p1').innerHTML='9360172760'
+}
+else{
+        document.getElementById('p1').innerHTML='Sorry! Went wrong'
+}
+}
+
+
+////////////////////////////////////////////////////////// funhction get milk
+
+function getmilk(amount) {
+    console.log(" goto the shop ");
+
+    var bottles = Math.floor(amount/30);        //  float - int mattra
+
+    console.log(" Buy "+bottles+" bottles of milk ");
+    console.log("return to home");
+}
+
+getmilk(100);  
+
+/////////////////////////////////////////////////////////  
 
 
 
