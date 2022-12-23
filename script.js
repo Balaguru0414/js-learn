@@ -179,7 +179,7 @@ work
 friends
 drivingLicence`);
 
-*/
+
 
 // challange
 
@@ -218,24 +218,54 @@ if (bala.bmi > dhana.bmi) {
 
 
 
+// looping
+
+for(let rep=1; rep<=10; rep++){
+	console.log(`Lifiting weights ${rep} times`);
+}
 
 
 
 
+const bala = [
+	"Bala",
+	"Guru",
+	2022-2000,
+	"Web developer",
+	['Abinesh','Dhana','Marimuthu','Ganesh'],
+	true
+];
 
+const type = [];
 
+for(let i=0; i<bala.length; i++){
+	console.log(bala[i],typeof bala[i]);
 
+	// type[i] = typeof bala[i];
 
+	type.push(typeof bala[i]);
+}
+console.log(type);
 
+const years = [2000,1997,1976,1963];
+const age = [];
 
+for (i = 0; i < years.length; i++) {
+	calc = 2022-years[i];
+	age.push(calc);
+}
 
+console.log(age);
 
+// continue and break
 
+for(i=0; i<bala.length; i++){
+	if (typeof bala[i] !== 'string') break;
 
+		console.log(bala[i], typeof bala[i]);
+}
 
-
-
-
+*/
 
 
 
