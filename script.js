@@ -108,15 +108,47 @@ console.log(`My tips value is ${tips}`);
 const totalBill = [bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]];
 
 console.log(bills,totalBill);
-*
+
 // array object
 
 const bala = {
-	firstName : 'Bala',
+	firstName : "Bala",
 	lastName : "Guru",
-
+	birthyear : 2000,
+	work : "Web developer",
+	friends : ['Abinesh','Dhana','Marimuthu','Ganesh'],
+	drivingLicence : false,
+	calcAge : function () {
+		this.age = 2022 - this.birthyear;
+		return this.age;
+	},
+	getSummary : function () {
+		return `${this.firstName} have a ${this.friends.length} friends and ${this.friends[0]} is my best friends.
+i was ${this.calcAge()}-years old.
+i was a ${this.work}.i have ${this.drivingLicence ? 'a': 'no'} DrivingLicence.`
+}
 	
 }
+
+// console.log(bala);
+
+// console.log(bala.age);
+
+// console.log(bala.getSummary());
+
+console.log(bala['getSummary']());  */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
