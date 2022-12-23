@@ -136,7 +136,101 @@ i was a ${this.work}.i have ${this.drivingLicence ? 'a': 'no'} DrivingLicence.`
 
 // console.log(bala.getSummary());
 
-console.log(bala['getSummary']());  */
+console.log(bala['getSummary']());  
+
+const bala = {
+	firstName : "Bala",
+	lastName : "Guru",
+	birthyear : 2000,
+	work : "Web developer",
+	friends : ['Abinesh','Dhana','Marimuthu','Ganesh'],
+	drivingLicence : false,
+	calcAge : function () {
+		this.age = 2022 - this.birthyear;
+		return this.age;
+	},
+	getSummary : function () {
+		return `${this.firstName} have a ${this.friends.length} friends and ${this.friends[0]} is my best friends.
+i was ${this.calcAge()}-years old.
+i was a ${this.work}.i have ${this.drivingLicence ? 'a': 'no'} DrivingLicence.`
+}
+	
+}
+
+bala.email = 'balag0414@gmail.com';
+bala.location = 'Tiruchirapalli';
+bala.fatherName = 'Lakashmanan Raj'
+bala.motherName = 'Kavitha';
+bala.brotherName = 'Surya Narayanan';
+
+const namekey = "Name";
+console.log(bala['first'+namekey]);
+console.log(bala['last'+namekey]);
+
+const interstData = prompt("which data you want ?");
+
+bala[interstData] ? console.log(bala[interstData]) : console.log(`Wrong Match!!!
+
+you can only see 
+firstName
+lastName
+birthyear
+work
+friends
+drivingLicence`);
+
+*/
+
+// challange
+
+const bala = {
+	fullName : 'BalaGuru',
+	weight : 100,
+	height : 1.75,
+	calcBMI : function () {
+		this.bmi = this.weight / this.height ** 2;
+		return this.bmi;
+	}
+}
+
+const dhana = {
+	fullName : 'DhanaSekaran',
+	weight : 70,
+	height : 1.75,
+	calcBMI : function () {
+		this.bmi = this.weight / this.height ** 2;
+		return this.bmi;
+	}
+}
+
+bala.calcBMI();
+dhana.calcBMI();
+
+console.log(Math.floor(bala.bmi),Math.floor(dhana.bmi));
+
+if (bala.bmi > dhana.bmi) {
+	console.log(`${bala.fullName}'s BMI (${Math.floor(bala.bmi)}) is higher than ${dhana.fullName}'s BMI (${Math.floor(dhana.bmi)}).`);
+} else if(dhana.bmi > bala.bmi){
+	console.log(`${dhana.fullName}'s BMI (${Math.floor(dhana.bmi)}) is higher than ${bala.fullName}'s BMI (${Math.floor(bala.bmi)}).`);
+}else{
+	console.log("Both are have a same BMI.")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
