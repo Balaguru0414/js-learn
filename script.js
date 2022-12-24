@@ -344,6 +344,42 @@ console.log(`My tips average is ${calcAverage(tips)}`);
 console.log(`My totals bills average is ${calcAverage(totals)}`);
 console.log(`My family age average is ${calcAverage([22,25,46,59])}`);
 
+//array max , min -- merge--
+
+const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+
+const calcTempAmplitude = function (t1,t2) {
+
+	const temps = t1.concat(t2);
+	console.log(temps);
+
+	let max = temps[0];
+	let min = temps[0];
+
+	for (let i = 0; i < temps.length; i++) {
+
+		const curTemp = temps[i];
+		if (typeof curTemp !== 'number') continue;
+
+		if (curTemp > max)  max = curTemp;
+		if (curTemp < min)  min = curTemp;
+	}
+	console.log(max,min);
+
+	return max-min;
+}
+
+const amplitude = calcTempAmplitude([5,56,3],[8,89,4]);
+console.log(amplitude);
+
+
+
+const merge = function (t1,t2) {
+	const t3 = t1.concat(t2);
+	console.log(t3);
+}
+console.log(merge([4,3,5],[3,6,2]));
+
 */
 
 
