@@ -265,14 +265,86 @@ for(i=0; i<bala.length; i++){
 		console.log(bala[i], typeof bala[i]);
 }
 
+
+
+// looping Backward
+
+const bala = [
+	"Bala",
+	"Guru",
+	2022-2000,
+	"Web developer",
+	['Abinesh','Dhana','Marimuthu','Ganesh'],
+	true
+];
+
+for(let i = bala.length-1; i >=0; i--){
+	console.log(i,bala[i],typeof bala[i]);
+}
+
+// loop inside a loop
+
+for (let exercise = 1; exercise < 4 ; exercise++) {
+	console.log(`----- Starting Exercise ${exercise} -----`);
+
+	for(let rep = 1; rep < 4 ; rep++){
+		console.log(`Exercise ${exercise} - Lifiting weight repitation ${rep}`)
+	}
+}
+
+
+rep = 1;
+while(rep < 4){
+	console.log(` Balaguru ${rep}`);
+	rep++;
+}
+
+random number create in dice
+
+let dice = Math.trunc(Math.random()*6)+1;
+
+while(dice !== 6){
+	console.log(` you are rolled ${dice}`);
+	dice = Math.trunc(Math.random()*6)+1;
+	if (dice === 6)console.log("loop is about to end...")
+}
+
+
+
+
+const calcTip = function (bill) {
+	return bill >= 50 && bill <= 300 ? bill*0.15 : bill*.20;
+}
+
+const bills =[22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips = [];
+
+const totals = [];
+
+for(let i = 0; i < bills.length; i++){
+	const tip = calcTip(bills[i]);
+	tips.push(tip);
+	totals.push(bills[i]+tip);
+}
+
+console.log(bills,tips,totals);
+
+const calcAverage = function (arr) {
+	let sum = 0;
+	for (let i = 0; i < arr.length ; i++){
+		//sum = sum + arr[i];
+		sum += arr[i];
+		}
+	return sum / arr.length;	
+}
+
+console.log(`My bills average is ${calcAverage(bills)}`);
+console.log(`My tips average is ${calcAverage(tips)}`);
+console.log(`My totals bills average is ${calcAverage(totals)}`);
+console.log(`My family age average is ${calcAverage([22,25,46,59])}`);
+
 */
-
-
-
-
-
-
-
 
 
 
