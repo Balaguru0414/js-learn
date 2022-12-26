@@ -380,6 +380,79 @@ const merge = function (t1,t2) {
 }
 console.log(merge([4,3,5],[3,6,2]));
 
+
+
+const measureKelvin = function () {
+	const measurement = {
+		type : 'Kelvin',
+		unit : 'Celcius',
+		// value : Number(prompt('Degree Celcius'))
+		value : 10
+	}
+
+	console.table(measurement);
+
+	const kelvin = measurement.value + 273;
+
+	return kelvin;
+}
+
+console.log(measureKelvin());
+
+
+const calcTempAmplitude = function (t1,t2) {
+
+	const temps = t1.concat(t2);
+	console.log(temps);
+
+	let max = 0;
+	let min = 0;
+
+	for (let i = 0; i < temps.length; i++) {
+
+		const curTemp = temps[i];
+		if (typeof curTemp !== 'number') continue;
+
+		debugger;
+		if (curTemp > max)  max = curTemp;
+		if (curTemp < min)  min = curTemp;
+	}
+	console.log(max,min);
+
+	return max-min;
+}
+
+const amplitude = calcTempAmplitude([5,56,3],[8,89,4]);
+console.log(amplitude);
+
+
+
+const temp = [17,4,32,25];
+
+const forcost = function (arr) {
+	let str = '';
+	for(let i = 0; i < arr.length; i++){
+		str = str + `${arr[i]}'C in a ${i+1} ${i+1 === 1 ? 'day' : 'days'}...`;
+	
+	}
+	console.log('...'+str)
+}
+
+console.log(forcost(temp));
+
+const temps = [17,4,32,25];
+
+const forcosts = function (arr) {
+	let str = 0;
+	for(let i = 0; i < arr.length; i++){
+		str = str + arr[i];
+	
+	}
+	console.log('...'+str)
+}
+
+console.log(forcosts(temps));
+
 */
 
 
